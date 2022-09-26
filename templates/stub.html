@@ -1,18 +1,33 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
 
-<!- This variable sets name of browser tab  -->
-{% set project = "Stubby" %}
+<!-- This variable sets name of browser tab  -->
+{% set project = "My Team" %}
 
-<!- This is a replacement block for Body in base.html -->
+<!-- This is a replacement block for Body in base.html -->
 {% block body %}
-    <!- Try building a new body here, bootstrap is a wise choice ->
+    <!-- Try building a new body here, bootstrap is a wise choice -->
     <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Stubby Body</strong></h1>
-        <p class="text-secondary">Put your name here</p>
+        <style>
+            .h2 {
+                font-family: Copperplate, fantasy;
+                color: darkred
+            }
+        </style>
+        <h1 class="text-primary"><strong>My Team</strong></h1>
+        <h2 class="h2">Alex Lu</h2>
+        <p class="text-secondary">Backend Developer</p>
+        <h2 class="h2">Evan Aparri</h2>
+        <p class="text-secondary">DevOps</p>
+        <h2 class="h2">Haseeb Beg</h2>
+        <p class="text-secondary">Frontend Developer</p>
+        <h2 class="h2">Shaurya Goel</h2>
+        <p class="text-secondary">Scrum Master</p>
+        <h2 class="h2">Tirth Thakker</h2>
+        <p class="text-secondary">Frontend Developer</p>
     </div>
 {% endblock %}
 
-<!- This is turning off birds background from base.html -->
+<!-- This is turning off birds background from base.html -->
 {% block background %}
 {% endblock %}
